@@ -21,30 +21,11 @@ import { ref } from "vue";
 import  axios  from "axios";
 const listTodo = ref([]);
 
-//ENVIAR COMENTARIOS
 
-// async function getTodoList() {
-//     var requestOptions = {
-//   method: 'GET',
-//   redirect: 'follow'
-// };
-
-// fetch("http://localhost:3000/todos", requestOptions)
-//   .then(response => response.text())
-//   .then(result =>  {return result})
-//   .catch(error => console.log('error', error));
-// }
-// listTodo=getTodoList()
-// console.log(listTodo);
-var config = {
-  method: 'get',
-  url: 'http://localhost:3000/todos',
-  headers: {}
-}
 
 const getName = async () => {
   try {
-    const response = await axios.request(config)
+    const response = await axios.get('http://localhost:3000/todos')
     listTodo.value = response.data
     console.log(response.data)
   } catch (error) {
