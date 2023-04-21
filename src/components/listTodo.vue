@@ -5,8 +5,9 @@
     
     <div v-for="todo in listTodo" :key="id" class="card-body border">
         <div>
-          <p v-if="todo.completed" class="card-text text-decoration-line-through">{{todo.todo}}</p>
-            <p v-else class="card-text">{{todo.todo}}</p>
+          <input class="toggle" type="checkbox" v-model="todo.completed" />
+          <input type="text" @blur="editTodo(todo.todo)" autofocus v-if="todo.completed" class="card-text text-decoration-line-through" v-model="todo.todo" />
+          <input type="text" @blur="editTodo(todo.todo)" autofocus v-else class="card-text" v-model="todo.todo" />
 
         </div>
         <button>Editar</button>
@@ -37,6 +38,7 @@ async function deleteTodo(id){
   try {
     const response = await axios.delete(`http://localhost:3000/todos/${id}`)
     listTodo.value = listTodo.value.filter((todo) => todo.id !==id)
+    //Aprovecho la reactividad de listTodo para actualizar la vista
   } catch (error) {
     console.log(error)
   }
