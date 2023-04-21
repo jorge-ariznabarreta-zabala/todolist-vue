@@ -2,18 +2,8 @@
   "todos": [
     {
       "todo": "234567",
-      "completed": false,
+      "completed": true,
       "id": 1
-    },
-    {
-      "todo": "qwertyu",
-      "completed": false,
-      "id": 2
-    },
-    {
-      "todo": "wertyui",
-      "completed": false,
-      "id": 3
     },
     {
       "todo": "szdgxhytfy",
@@ -24,6 +14,21 @@
       "todo": "aefgsrhdtufry",
       "completed": false,
       "id": 5
+    },
+    {
+      "todo": "ertyui",
+      "completed": false,
+      "id": 6
+    },
+    {
+      "todo": "ertyui12345678",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "todo": "1qaz",
+      "completed": false,
+      "id": 8
     }
   ]
 }
