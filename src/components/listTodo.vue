@@ -5,13 +5,13 @@
     
     <div v-for="todo in listTodo" :key="id" class="card-body border">
         <div>
-          <input class="toggle" type="checkbox" v-model="todo.completed" />
+          <input class="toggle m-3" type="checkbox" v-model="todo.completed" />
           <input type="text" @blur="editTodo(todo.todo)" autofocus v-if="todo.completed" class="card-text text-decoration-line-through" v-model="todo.todo" />
-          <input type="text" @blur="editTodo(todo.todo)" autofocus v-else class="card-text" v-model="todo.todo" />
+          <input type="text" @blur="editTodo(todo.todo)" autofocus v-else class="card-text shadow p-3 mb-5 bg-body-tertiary rounded" v-model="todo.todo" />
 
         </div>
-        <button>Editar</button>
-        <button @click="deleteTodo(todo.id)">Delete</button>
+        <button class="btn btn-primary m-2">Editar</button>
+        <button class="btn btn-danger" @click="deleteTodo(todo.id)">Delete</button>
     </div>
 </div>
     </div>
