@@ -1,6 +1,6 @@
 <template>
   <div class="row container-fluid" id="CardContainer">
-    <div class="card border">
+    <div class=" m-3">
 
 
     
