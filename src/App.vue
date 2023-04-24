@@ -1,5 +1,5 @@
 <template>
-    <div class="column">
+    <div class="column algo">
         <newTodo />
         <listTodo />
     </div>
@@ -10,6 +10,8 @@ import newTodo from './components/newTodo.vue'
 import listTodo from './components/listTodo.vue'
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
+.algo {
+    background-image: url(./assets/mika-korhonen-5ObeNx0iIKk-unsplash.jpg);
+}
 </style>

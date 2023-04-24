@@ -3,7 +3,7 @@
     <div class="row container-fluid" id="CardContainer">
 <div class="card border">
     
-    <div v-for="todo in listTodo" :key="id" class="card-body border">
+    <div v-for="todo in listTodo" :key="id" class="card-body border w-50 p-3">
         <div>
           <input class="toggle m-3" type="checkbox" v-model="todo.completed" />
           <input type="text" @blur="editTodo(todo.todo)" autofocus v-if="todo.completed" class="card-text text-decoration-line-through" v-model="todo.todo" />

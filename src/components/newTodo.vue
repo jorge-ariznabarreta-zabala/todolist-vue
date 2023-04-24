@@ -1,6 +1,6 @@
 <template>
   <fieldset class="ps-5">
-    <legend class="m-2">NewTodo:</legend>
+    <legend class="m-2 new">NewTodo:</legend>
     
         
           <input type="text" name="newTodo" id="newTodo" class="m-4 shadow-lg p-3 mb-5 bg-body-tertiary rounded" autofocus aria-describedby="helpId" placeholder="Insert a new Todo"
@@ -28,4 +28,8 @@ async function postTodo() {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.new {
+  color: white;
+}
+</style>
