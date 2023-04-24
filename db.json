@@ -6,8 +6,13 @@
       "id": 1
     },
     {
+<<<<<<< HEAD
       "todo": "Mostrar el resultado a Andrés y otros",
       "completed": false,
+=======
+      "todo": "Mohame",
+      "completed": true,
+>>>>>>> 1eec1a7f6902e5c6fd4019340648e5afa34fca4d
       "id": 2
     },
     {
