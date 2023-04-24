@@ -1,14 +1,19 @@
 {
   "todos": [
     {
-      "todo": "Miha",
-      "completed": true,
+      "todo": "Terminar el ejercicio de TODOs con backend",
+      "completed": false,
       "id": 1
     },
     {
-      "todo": "Mohamed",
-      "completed": true,
+      "todo": "Mostrar el resultado a Andrés y otros",
+      "completed": false,
       "id": 2
+    },
+    {
+      "todo": "Crear nuevos equipos para el próximo proyect",
+      "completed": false,
+      "id": 3
     }
   ]
 }
