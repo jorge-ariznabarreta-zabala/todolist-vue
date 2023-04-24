@@ -1,19 +1,14 @@
 {
   "todos": [
     {
-      "todo": "Mihai Cocea",
-      "completed": false,
-      "id": 10
+      "todo": "Miha",
+      "completed": true,
+      "id": 1
     },
     {
-      "todo": "Mohamed El Ibrahimi",
-      "completed": false,
-      "id": 11
-    },
-    {
-      "todo": "Jorge Ariznabarreta",
-      "completed": false,
-      "id": 12
+      "todo": "Mohamed",
+      "completed": true,
+      "id": 2
     }
   ]
 }

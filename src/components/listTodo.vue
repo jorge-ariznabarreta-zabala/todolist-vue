@@ -2,18 +2,19 @@
   <div class="row container-fluid" id="CardContainer">
     <div class="card border">
 
-      <div v-for="todo in listTodo" :key="id" class="card-body border">
+
+    
+    <div v-for="todo in listTodo" :key="id" class="card-body border w-50 p-3">
         <div>
-          <input class="toggle" type="checkbox" v-model="todo.completed" @change="editTodo(todo)"/>
-          <input type="text" @blur="editTodo(todo)" autofocus v-if="todo.completed"
-            class="card-text text-decoration-line-through" v-model="todo.todo" />
-          <input type="text" @blur="editTodo(todo)" autofocus v-else class="card-text" v-model="todo.todo" />
+          <input class="toggle m-3" type="checkbox" v-model="todo.completed" @change="editTodo(todo)" />
+          <input type="text" @blur="editTodo(todo)" autofocus v-if="todo.completed" class="card-text shadow p-3 mb-5 bg-body-tertiary rounded text-decoration-line-through" v-model="todo.todo" />
+          <input type="text" @blur="editTodo(todo)" autofocus v-else class="card-text shadow p-3 mb-5 bg-body-tertiary rounded" v-model="todo.todo" />
+          <button class="btn btn-danger mx-3 p-3" @click="deleteTodo(todo.id)">Delete</button>
 
         </div>
       
-        <button @click="deleteTodo(todo.id)">Delete</button>
-      </div>
     </div>
+  </div>
   </div>
 </template>
 
