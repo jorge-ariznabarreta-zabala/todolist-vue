@@ -16,7 +16,7 @@ let newTodo = '';
 //ENVIAR COMENTARIOS
 
 async function postTodo() {
-  const url = 'http://localhost:3000/todos';
+  const url = 'https://deploy-back-render.onrender.com/todos';
   const response = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

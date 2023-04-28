@@ -28,7 +28,7 @@ const listTodo = ref([]);
 
 const getName = async () => {
   try {
-    const response = await axios.get('http://localhost:3000/todos')
+    const response = await axios.get('https://deploy-back-render.onrender.com/todos')
     listTodo.value = response.data
     console.log(response.data)
   } catch (error) {
@@ -38,7 +38,7 @@ const getName = async () => {
 getName()
 async function deleteTodo(id) {
   try {
-    const response = await axios.delete(`http://localhost:3000/todos/${id}`)
+    const response = await axios.delete(`https://deploy-back-render.onrender.com/todos/${id}`)
     listTodo.value = listTodo.value.filter((todo) => todo.id !== id)
     //Aprovecho la reactividad de listTodo para actualizar la vista
   } catch (error) {
@@ -51,7 +51,7 @@ async function editTodo(todo) {
  
 
   try {
-    const response = await axios.patch(`http://localhost:3000/todos/${todo.id}`, {
+    const response = await axios.patch(`https://deploy-back-render.onrender.com/todos/${todo.id}`, {
     "todo": todo.todo,
     "completed": todo.completed
   })

@@ -1,24 +1,14 @@
 {
   "todos": [
     {
-      "todo": "Terminar el ejercicio de TODOs con backend",
-      "completed": false,
-      "id": 1
-    },
-    {
-<<<<<<< HEAD
-      "todo": "Mostrar el resultado a Andrés y otros",
-      "completed": false,
-=======
-      "todo": "Mohame",
-      "completed": true,
->>>>>>> 1eec1a7f6902e5c6fd4019340648e5afa34fca4d
-      "id": 2
-    },
-    {
-      "todo": "Crear nuevos equipos para el próximo proyect",
+      "todo": "Crear nuevos equipos para el próximo proyecto",
       "completed": false,
       "id": 3
+    },
+    {
+      "todo": "dtfyguhijokplñ",
+      "completed": false,
+      "id": 4
     }
   ]
 }
