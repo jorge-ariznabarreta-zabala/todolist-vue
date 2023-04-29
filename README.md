@@ -39,7 +39,7 @@ vue.config.js
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? "/REPO_NAME/" : "/",
 };
-Change "/REPO_NAME/" for "/TODOVUE/" or some nice name for your project
+Change "/REPO_NAME/" for "/todolist-vue/", the name of your repo in github
 Now, when we deploy our site, all the static assets should be loaded from the correct paths.
 
 Step 2. Build your project using npm build
