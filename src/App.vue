@@ -12,6 +12,6 @@ import listTodo from './components/listTodo.vue'
 
 <style  scoped>
 .algo {
-    background-image: url(./assets/mika-korhonen-5ObeNx0iIKk-unsplash.jpg);
+    background-image: url(./assets/mika-korhonen-5ObeNx0iIKk-unsplash.webp);
 }
 </style>
